@@ -1,0 +1,13 @@
+{
+  "name": "formule-one-app",
+  "version": "1.0.0",
+  "description": "**Small web application containing information about the F1 season 2024. This project is built for my HTML and JavaScript course at the university**",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
