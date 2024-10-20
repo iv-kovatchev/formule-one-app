@@ -1,0 +1,82 @@
+@import "_colors.css";
+
+@font-face {
+    font-family: "Play";
+    src: url("../fonts/Play-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PlayBold";
+    src: url("../fonts/Play-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root {
+    --font-size-xx-small: 0.625rem; /* 10px */
+    --font-size-x-small: 0.75rem;   /* 12px */
+    --font-size-small: 0.875rem;    /* 14px */
+    --font-size-base: 1rem;         /* 16px, default body size */
+    --font-size-large: 1.25rem;     /* 20px */
+    --font-size-x-large: 1.5rem;    /* 24px */
+    --font-size-xx-large: 2rem;     /* 32px */
+    --font-size-heading: 2.5rem;    /* 40px, used for headings */
+    --font-size-display: 3rem;      /* 48px, used for large display text */
+    --line-height-base: 1.6;
+}
+
+body {
+    font-family: "Play", sans-serif;
+    font-size: var(--font-size-base);
+    line-height: var(--font-size-base);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--gray-500);
+    font-family: "Play", sans-serif;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: var(--font-size-heading);
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: var(--font-size-xx-large);
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: var(--font-size-x-large);
+    line-height: 1.4;
+}
+
+h4 {
+    font-size: var(--font-size-large);
+    line-height: 1.3;
+}
+
+h5 {
+    font-size: var(--font-size-base);
+    line-height: 1.3;
+}
+
+p {
+    font-family: "Play", sans-serif;
+    font-size: var(--font-size-base);
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--red-400);
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--red-400);
+}

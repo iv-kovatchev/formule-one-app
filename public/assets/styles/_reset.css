@@ -1,0 +1,76 @@
+/* Reset margins, paddings, and box-sizing for all elements */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure that html and body take up the full height */
+html, body {
+    height: 100%;
+}
+
+/* Set a default font size and family for body */
+body {
+    font-size: 100%;
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased; /* Improves font rendering */
+    -moz-osx-font-smoothing: grayscale;  /* Improves font rendering on macOS */
+}
+
+/* Remove list styling (bullets and indents) */
+ul, ol {
+    list-style: none;
+}
+
+/* Remove text decoration from links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Normalize images and media elements */
+img, picture, video, canvas, svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Remove default table borders */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set default styles for form elements */
+input, button, textarea, select {
+    font: inherit;
+    outline: none;
+}
+
+/* Buttons should not have default border or background */
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Remove default border and padding from fieldsets */
+fieldset {
+    border: 0;
+    padding: 0;
+}
+
+/* Ensure that iframes take up their container space */
+iframe {
+    border: 0;
+}
+
+/* Normalize heading font sizes */
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}

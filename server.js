@@ -22,32 +22,31 @@ const getContentType = (filePath) => {
 const server = http.createServer((req, res) => {
   let filePath;
 
-  console.log('req.url');
-
-  switch(req.url) {
-    case '/index':
-    case '/':
-      filePath = '/pages/index/index.html';
-      break;
-    case '/standings':
-      filePath = '/pages/standings/standings.html';
-      break;
-    case '/schedule':
-      filePath = '/pages/schedule/schedule.html';
-      break;
-    case '/tracks':
-      filePath = '/pages/tracks/tracks.html';
-      break;
-    case '/assets/images/favicon.ico':
-      filePath = '/assets/images/favicon.ico';
-      break;
-    default:
-      filePath = '/pages/404.html';
+  //Here we are loading different assets
+  if(req.url.includes('/assets') || req.url.includes('/data')) {
+    filePath = req.url;
+  }
+  else {
+    switch(req.url) {
+      case '/index':
+      case '/':
+        filePath = '/pages/index/index.html';
+        break;
+      case '/standings':
+        filePath = '/pages/standings/standings.html';
+        break;
+      case '/schedule':
+        filePath = '/pages/schedule/schedule.html';
+        break;
+      case '/tracks':
+        filePath = '/pages/tracks/tracks.html';
+        break;
+      default:
+        filePath = '/pages/404.html';
+    }
   }
 
   filePath = path.join(__dirname, 'public', filePath);
-
-  console.log(filePath);
 
   fs.readFile(filePath, (err, content) => {
     if (err) {
