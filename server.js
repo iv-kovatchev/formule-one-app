@@ -13,6 +13,7 @@ const getContentType = (filePath) => {
     '.js': 'text/javascript',
     '.png': 'image/png',
     '.jpg': 'image/jpeg',
+    '.ico': 'image/x-icon',
   };
 
   return mimeTypes[extname] || 'application/octet-stream';
@@ -36,6 +37,9 @@ const server = http.createServer((req, res) => {
       break;
     case '/tracks':
       filePath = '/pages/tracks/tracks.html';
+      break;
+    case '/assets/images/favicon.ico':
+      filePath = '/assets/images/favicon.ico';
       break;
     default:
       filePath = '/pages/404.html';
