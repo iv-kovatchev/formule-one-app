@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Formula One application</title>
     <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/assets/styles/main.css">
 </head>
 <body>
+
 <nav class="navbar">
     <div class="navbar__logo">
         <a href="/index">
@@ -36,16 +38,26 @@
             <a href="/tracks">Tracks</a>
         </li>
     </ul>
-
-    <div class="navbar__hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
 </nav>
 
 <div class="container">
-    <h1>This is schedule page</h1>
+    <h1>Driver standings</h1>
+    <div class="drivers">
+        <table class="table" id="standings-table">
+            <thead>
+            <tr>
+                <th>Position</th>
+                <th>Name</th>
+                <th>Team</th>
+                <th>Points</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
 </div>
+
+<script type="module" src="../../assets/js/standings.js"></script>
 </body>
 </html>

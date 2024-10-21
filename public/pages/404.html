@@ -5,8 +5,47 @@
     <title>404 Not Found</title>
 </head>
 <body>
-<h1>404 - Page Not Found</h1>
-<p>Sorry, the page you're looking for doesn't exist.</p>
-<a href="/public">Go Back Home</a>
+<nav class="navbar">
+    <div class="navbar__logo">
+        <a href="/index">
+            <img src="/assets/images/logo.png" alt="logo" class="navbar__logo"/>
+        </a>
+    </div>
+
+    <ul class="navbar__menu">
+        <li class="navbar__menu-link">
+            <a href="/index">Home</a>
+        </li>
+        <li class="navbar__menu-link">
+            <button>Standings</button>
+            <ul class="navbar__submenu">
+                <li class="navbar__submenu-link">
+                    <a href="/standings/drivers">Drivers</a>
+                </li>
+                <li class="navbar__submenu-link">
+                    <a href="/standings/constructors">Constructors</a>
+                </li>
+            </ul>
+        </li>
+        <li class="navbar__menu-link">
+            <a href="/schedule">Schedule</a>
+        </li>
+        <li class="navbar__menu-link">
+            <a href="/tracks">Tracks</a>
+        </li>
+    </ul>
+
+    <div class="navbar__hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+<div class="container">
+    <h1>404 - Page Not Found</h1>
+    <p>Sorry, the page you're looking for doesn't exist.</p>
+    <a href="/public">Go Back Home</a>
+</div>
 </body>
 </html>

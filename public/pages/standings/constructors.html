@@ -23,10 +23,10 @@
             <button>Standings</button>
             <ul class="navbar__submenu">
                 <li class="navbar__submenu-link">
-                    Drivers
+                    <a href="/standings/drivers">Drivers</a>
                 </li>
                 <li class="navbar__submenu-link">
-                    Constructors
+                    <a href="/standings/constructors">Constructors</a>
                 </li>
             </ul>
         </li>
@@ -45,20 +45,21 @@
     </div>
 </nav>
 
-<h1>This is standings page</h1>
-
-<div class="drivers">
-    <table id="standings-table">
-        <thead>
+<div class="container">
+    <h1>Constructor standings</h1>
+    <div class="constructors">
+        <table class="table" id="standings-table">
+            <thead>
             <tr>
+                <th>Position</th>
                 <th>Name</th>
-                <th>Team</th>
                 <th>Points</th>
             </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
 </div>
 
 <script type="module" src="../../assets/js/standings.js"></script>

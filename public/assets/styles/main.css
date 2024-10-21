@@ -1,5 +1,7 @@
 @import "_colors.css";
+@import "_global.css";
 @import "_reset.css";
 @import "_typography.css";
 
 @import "_navbar.css";
+@import "_table.css";

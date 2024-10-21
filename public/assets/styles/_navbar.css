@@ -1,10 +1,15 @@
 .navbar {
     align-items: center;
+    background-color: var(--white);
     box-shadow: rgba(0, 0, 0, 0.2) 5px 3px 10px;
     display: flex;
     justify-content: space-between;
     height: 60px;
     padding: 0 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 .navbar__menu {
@@ -25,7 +30,8 @@
     margin-right: 0;
 }
 
-.navbar__menu-link a, .navbar__menu-link button {
+.navbar__menu-link a,
+.navbar__menu-link button {
     color: var(--red-400);
     display: block;
     font-weight: bold;
@@ -34,8 +40,8 @@
     text-transform: uppercase;
 }
 
-.navbar__menu-link a::before,
-.navbar__menu-link button::before {
+.navbar__menu-link > a::before,
+.navbar__menu-link > button::before {
     content: "";
     position: absolute;
     display: block;
@@ -48,8 +54,8 @@
     transition: transform 0.3s ease;
 }
 
-.navbar__menu-link a:hover::before,
-.navbar__menu-link button:hover::before {
+.navbar__menu-link > a:hover::before,
+.navbar__menu-link > button:hover::before {
     transform: scaleX(1);
 }
 
@@ -63,18 +69,14 @@
     z-index: 1;
 }
 
-.navbar__submenu-link {
+.navbar__submenu-link a {
     background-color: var(--white);
     font-weight: bold;
     text-transform: uppercase;
     padding: 16px;
 }
 
-.navbar__submenu-link:last-child {
-    border-radius: 0 0 6px 6px;
-}
-
-.navbar__submenu-link:hover {
+.navbar__submenu-link:hover a {
     background-color: var(--red-400);
     color: var(--white);
     cursor: pointer;

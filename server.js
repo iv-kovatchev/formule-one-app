@@ -22,7 +22,7 @@ const getContentType = (filePath) => {
 const server = http.createServer((req, res) => {
   let filePath;
 
-  //Here we are loading different assets
+  //Here we are loading different assets and all pages
   if(req.url.includes('/assets') || req.url.includes('/data')) {
     filePath = req.url;
   }
@@ -32,8 +32,11 @@ const server = http.createServer((req, res) => {
       case '/':
         filePath = '/pages/index/index.html';
         break;
-      case '/standings':
-        filePath = '/pages/standings/standings.html';
+      case '/standings/drivers':
+        filePath = '/pages/standings/drivers.html';
+        break;
+      case '/standings/constructors':
+        filePath = '/pages/standings/constructors.html';
         break;
       case '/schedule':
         filePath = '/pages/schedule/schedule.html';
