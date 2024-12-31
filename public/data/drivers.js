@@ -1,5 +1,6 @@
 export const drivers = [
   {
+    id: 1,
     name: 'Max Verstappen',
     country: 'Netherlands',
     age: 27,
@@ -11,6 +12,7 @@ export const drivers = [
     image: 'verstappen.jpg'
   },
   {
+    id: 2,
     name: 'Sergio Perez',
     country: 'Mexico',
     age: 34,
@@ -22,6 +24,7 @@ export const drivers = [
     image: 'perez.jpg'
   },
   {
+    id: 3,
     name: 'Lando Norris',
     country: 'United Kingdom',
     age: 24,
@@ -33,6 +36,7 @@ export const drivers = [
     image: 'norris.jpg'
   },
   {
+    id: 4,
     name: 'Oscar Piastri',
     country: 'Australia',
     age: 23,
@@ -44,6 +48,7 @@ export const drivers = [
     image: 'piastri.jpg'
   },
   {
+    id: 5,
     name: 'Charles Leclerc',
     country: 'Monaco',
     age: 27,
@@ -55,6 +60,7 @@ export const drivers = [
     image: 'leclerc.jpg'
   },
   {
+    id: 6,
     name: 'Carlos Sainz',
     country: 'Spain',
     age: 30,
@@ -66,6 +72,7 @@ export const drivers = [
     image: 'sainz.jpg'
   },
   {
+    id: 7,
     name: 'Lewis Hamilton',
     country: 'United Kingdom',
     age: 39,
@@ -77,6 +84,7 @@ export const drivers = [
     image: 'hamilton.jpg'
   },
   {
+    id: 8,
     name: 'George Russell',
     country: 'United Kingdom',
     age: 26,
@@ -88,6 +96,7 @@ export const drivers = [
     image: 'russel.jpg'
   },
   {
+    id: 9,
     name: 'Fernando Alonso',
     country: 'Spain',
     age: 43,
@@ -99,6 +108,7 @@ export const drivers = [
     image: 'alonso.jpg'
   },
   {
+    id: 10,
     name: 'Lance Stroll',
     country: 'Canada',
     age: 26,
@@ -110,6 +120,7 @@ export const drivers = [
     image: 'stroll.jpg'
   },
   {
+    id: 11,
     name: 'Yuki Tsunoda',
     country: 'Japan',
     age: 24,
@@ -121,6 +132,7 @@ export const drivers = [
     image: 'tsunoda.jpg'
   },
   {
+    id: 12,
     name: 'Liam Lawson',
     country: 'New Zealand',
     age: 22,
@@ -132,6 +144,7 @@ export const drivers = [
     image: 'lawson.jpg'
   },
   {
+    id: 13,
     name: 'Nico Hulkenberg',
     country: 'Germany',
     age: 37,
@@ -143,6 +156,7 @@ export const drivers = [
     image: 'hulkenberg.jpg'
   },
   {
+    id: 14,
     name: 'Kevin Magnussen',
     country: 'Denmark',
     age: 32,
@@ -154,6 +168,7 @@ export const drivers = [
     image: 'magnussen.jpg'
   },
   {
+    id: 15,
     name: 'Alexander Albon',
     country: 'Thailand',
     age: 28,
@@ -165,6 +180,7 @@ export const drivers = [
     image: 'albon.jpg'
   },
   {
+    id: 16,
     name: 'Franco Colapinto',
     country: 'Argentina',
     age: 21,
@@ -176,6 +192,7 @@ export const drivers = [
     image: 'colapinto.jpg'
   },
   {
+    id: 17,
     name: 'Pierre Gasly',
     country: 'France',
     age: 28,
@@ -187,6 +204,7 @@ export const drivers = [
     image: 'gasly.jpg'
   },
   {
+    id: 18,
     name: 'Esteban Ocon',
     country: 'France',
     age: 28,
@@ -198,6 +216,7 @@ export const drivers = [
     image: 'ocon.jpg'
   },
   {
+    id: 19,
     name: 'Valtteri Bottas',
     country: 'Finland',
     age: 35,
@@ -209,6 +228,7 @@ export const drivers = [
     image: 'bottas.jpg'
   },
   {
+    id: 20,
     name: 'Zhou Guanyu',
     country: 'China',
     age: 25,
