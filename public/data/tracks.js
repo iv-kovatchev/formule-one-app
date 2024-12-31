@@ -1,0 +1,242 @@
+export const tracks = [
+  {
+    id: 1,
+    name: 'Albert Park Circuit',
+    location: 'Melbourne, Australia',
+    length: 5.278,
+    race_lap_record: '1:19.813',
+    turns: 16,
+    laps: 58,
+    image: 'albert_park_circuit.png'
+  },
+  {
+    id: 2,
+    name: 'Autódromo Hermanos Rodríguez',
+    location: 'Mexico City, Mexico',
+    length: 4.304,
+    race_lap_record: '1:17.774',
+    turns: 17,
+    laps: 71,
+    image: 'autódromo_hermanos_rodríguez.png'
+  },
+  {
+    id: 3,
+    name: 'Imola Circuit',
+    location: 'Imola, Emilia-Romagna, Italy',
+    length: 4.909,
+    race_lap_record: '1:15.484',
+    turns: 19,
+    laps: 63,
+    image: 'imola.png'
+  },
+  {
+    id: 4,
+    name: 'Interlagos Circuit',
+    location: 'Interlagos, São Paulo, Brazil',
+    length: 4.309,
+    race_lap_record: '1:10.540',
+    turns: 15,
+    laps: 71,
+    image: 'interlagos_circuit.png'
+  },
+  {
+    id: 5,
+    name: 'Monza Circuit',
+    location: 'Monza, Italy',
+    length: 5.793,
+    race_lap_record: '1:21.046',
+    turns: 11,
+    laps: 53,
+    image: 'monza_circuit.png'
+  },
+  {
+    id: 6,
+    name: 'Bahrain International Circuit',
+    location: 'Sakhir, Bahrain',
+    length: 5.412,
+    race_lap_record: '1:31.447',
+    turns: 15,
+    laps: 57,
+    image: 'bahrain_international_circuit.png'
+  },
+  {
+    id: 7,
+    name: 'Baku City Circuit',
+    location: 'Azadliq Square, Baku, Azerbaijan',
+    length: 	6.003,
+    race_lap_record: '1:43.009',
+    turns: 20,
+    laps: 51,
+    image: 'baku_circuit.png'
+  },
+  {
+    id: 8,
+    name: 'Circuit de Barcelona-Catalunya',
+    location: 'Montmeló, Barcelona, Catalonia, Spain',
+    length: 4.657,
+    race_lap_record: '1:16.330',
+    turns: 14,
+    laps: 66,
+    image: 'catalunya_circuit.png'
+  },
+  {
+    id: 9,
+    name: 'Circuit de Monaco',
+    location: 'Monte Carlo, Monaco',
+    length: 3.337,
+    race_lap_record: '1:12.909',
+    turns: 19,
+    laps: 78,
+    image: 'monte_carlo_circuit.png'
+  },
+  {
+    id: 10,
+    name: 'Circuit de Spa-Francorchamps',
+    location: 'Stavelot, Belgium',
+    length: 7.004,
+    race_lap_record: '1:44.701',
+    turns: 19,
+    laps: 44,
+    image: 'spa_circuit.png'
+  },
+  {
+    id: 11,
+    name: 'Circuit Gilles Villeneuve',
+    location: 'Parc Jean-Drapeau Montreal, Quebec',
+    length: 4.361,
+    race_lap_record: '1:13.078',
+    turns: 14,
+    laps: 70,
+    image: 'montreal_circuit.png'
+  },
+  {
+    id: 12,
+    name: 'Circuit of the Americas',
+    location: 'Austin, Texas, United States',
+    length: 5.513,
+    race_lap_record: '1:36.169',
+    turns: 20,
+    laps: 56,
+    image: 'austin_circuit.png'
+  },
+  {
+    id: 13,
+    name: 'Circuit Zandvoort',
+    location: 'Zandvoort, North Holland, Netherlands',
+    length: 4.259,
+    race_lap_record: '1:11.097',
+    turns: 14,
+    laps: 72,
+    image: 'zandvoort_circuit.png'
+  },
+  {
+    id: 14,
+    name: 'Hungaroring',
+    location: 'Mogyoród, Pest County, Hungary',
+    length: 4.381,
+    race_lap_record: '1:16.627',
+    turns: 14,
+    laps: 70,
+    image: 'hungaroring.png'
+  },
+  {
+    id: 15,
+    name: 'Jeddah Corniche Circuit',
+    location: 'Jeddah, Saudi Arabia',
+    length: 6.174,
+    race_lap_record: '1:30.734',
+    turns: 27,
+    laps: 50,
+    image: 'jeddah_circuit.png'
+  },
+  {
+    id: 16,
+    name: 'Las Vegas Strip Circuit',
+    location: 'Paradise, Nevada, United States',
+    length: 6.201,
+    race_lap_record: '1:34.876',
+    turns: 17,
+    laps: 50,
+    image: 'las_vegas_circuit.png'
+  },
+  {
+    id: 17,
+    name: 'Lusail International Circuit',
+    location: 'Lusail, Al Daayen, Qatar',
+    length: 5.419,
+    race_lap_record: '1:22.384',
+    turns: 16,
+    laps: 57,
+    image: 'qatar_circuit.png'
+  },
+  {
+    id: 18,
+    name: 'Marina Bay Street Circuit',
+    location: 'Downtown Core and Kallang, Singapore',
+    length: 4.940,
+    race_lap_record: '1:34.486',
+    turns: 19,
+    laps: 62,
+    image: 'marina_bay_circuit.png'
+  },
+  {
+    id: 19,
+    name: 'Miami International Autodrome',
+    location: 'Hard Rock Stadium, Miami Gardens, Florida, U.S.',
+    length: 5.412,
+    race_lap_record: '1:29.708',
+    turns: 19,
+    laps: 57,
+    image: 'miami_circuit.png'
+  },
+  {
+    id: 20,
+    name: 'Red Bull Ring',
+    location: 'Spielberg, Styria, Austria',
+    length: 4.318,
+    race_lap_record: '1:05.619',
+    turns: 10,
+    laps: 71,
+    image: 'austria_circuit.png'
+  },
+  {
+    id: 21,
+    name: 'Shanghai International Circuit',
+    location: 'Jiading, Shanghai, China',
+    length: 5.451,
+    race_lap_record: '1:32.238',
+    turns: 16,
+    laps: 56,
+    image: 'shanghai_circuit.png'
+  },
+  {
+    id: 22,
+    name: 'Silverstone Circuit',
+    location: 'Silverstone, Northamptonshire, United Kingdom',
+    length: 5.891,
+    race_lap_record: '1:27.097',
+    turns: 18,
+    laps: 52,
+    image: 'silverstone_circuit.png'
+  },
+  {
+    id: 23,
+    name: 'Suzuka International Racing Course',
+    location: 'Suzuka, Mie Prefecture, Japan',
+    length: 5.807,
+    race_lap_record: '1:30.983',
+    turns: 18,
+    laps: 53,
+    image: 'suzuka_circuit.png'
+  },
+  {
+    id: 24,
+    name: 'Yas Marina Circuit',
+    location: 'Yas Island, Abu Dhabi, UAE',
+    length: 5.281,
+    race_lap_record: '1:25.637',
+    turns: 16,
+    laps: 58,
+    image: 'yas_marina_circuit.png'
+  }
+]

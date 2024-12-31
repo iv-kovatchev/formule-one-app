@@ -7,7 +7,8 @@ export const drivers = [
     season_points: 339,
     points: 2925,
     podiums: 109,
-    team_id: 2
+    team_id: 2,
+    image: 'verstappen.jpg'
   },
   {
     name: 'Sergio Perez',
@@ -17,7 +18,8 @@ export const drivers = [
     season_points: 144,
     points: 1630,
     podiums: 39,
-    team_id: 2
+    team_id: 2,
+    image: 'perez.jpg'
   },
   {
     name: 'Lando Norris',
@@ -27,7 +29,8 @@ export const drivers = [
     season_points: 285,
     points: 918,
     podiums: 24,
-    team_id: 1
+    team_id: 1,
+    image: 'norris.jpg'
   },
   {
     name: 'Oscar Piastri',
@@ -37,17 +40,19 @@ export const drivers = [
     season_points: 237,
     points: 334,
     podiums: 9,
-    team_id: 1
+    team_id: 1,
+    image: 'piastri.jpg'
   },
   {
     name: 'Charles Leclerc',
-    country: 'Australia',
+    country: 'Monaco',
     age: 27,
     championships: 0,
     season_points: 250,
     points: 1324,
     podiums: 39,
-    team_id: 3
+    team_id: 3,
+    image: 'leclerc.jpg'
   },
   {
     name: 'Carlos Sainz',
@@ -57,7 +62,8 @@ export const drivers = [
     season_points: 197,
     points: 1179,
     podiums: 23,
-    team_id: 3
+    team_id: 3,
+    image: 'sainz.jpg'
   },
   {
     name: 'Lewis Hamilton',
@@ -67,7 +73,8 @@ export const drivers = [
     season_points: 177,
     points: 4816,
     podiums: 201,
-    team_id: 4
+    team_id: 4,
+    image: 'hamilton.jpg'
   },
   {
     name: 'George Russell',
@@ -77,7 +84,8 @@ export const drivers = [
     season_points: 159,
     points: 628,
     podiums: 14,
-    team_id: 4
+    team_id: 4,
+    image: 'russel.jpg'
   },
   {
     name: 'Fernando Alonso',
@@ -87,7 +95,8 @@ export const drivers = [
     season_points: 62,
     points: 2329,
     podiums: 106,
-    team_id: 5
+    team_id: 5,
+    image: 'alonso.jpg'
   },
   {
     name: 'Lance Stroll',
@@ -97,7 +106,8 @@ export const drivers = [
     season_points: 24,
     points: 292,
     podiums: 3,
-    team_id: 5
+    team_id: 5,
+    image: 'stroll.jpg'
   },
   {
     name: 'Yuki Tsunoda',
@@ -107,7 +117,8 @@ export const drivers = [
     season_points: 22,
     points: 83,
     podiums: 0,
-    team_id: 6
+    team_id: 6,
+    image: 'tsunoda.jpg'
   },
   {
     name: 'Liam Lawson',
@@ -117,7 +128,8 @@ export const drivers = [
     season_points: 0,
     points: 2,
     podiums: 0,
-    team_id: 6
+    team_id: 6,
+    image: 'lawson.jpg'
   },
   {
     name: 'Nico Hulkenberg',
@@ -127,7 +139,8 @@ export const drivers = [
     season_points: 25,
     points: 555,
     podiums: 0,
-    team_id: 7
+    team_id: 7,
+    image: 'hulkenberg.jpg'
   },
   {
     name: 'Kevin Magnussen',
@@ -137,7 +150,8 @@ export const drivers = [
     season_points: 8,
     points: 194,
     podiums: 1,
-    team_id: 7
+    team_id: 7,
+    image: 'magnussen.jpg'
   },
   {
     name: 'Alexander Albon',
@@ -147,7 +161,8 @@ export const drivers = [
     season_points: 12,
     points: 240,
     podiums: 2,
-    team_id: 8
+    team_id: 8,
+    image: 'albon.jpg'
   },
   {
     name: 'Franco Colapinto',
@@ -157,7 +172,8 @@ export const drivers = [
     season_points: 4,
     points: 4,
     podiums: 0,
-    team_id: 8
+    team_id: 8,
+    image: 'colapinto.jpg'
   },
   {
     name: 'Pierre Gasly',
@@ -167,7 +183,8 @@ export const drivers = [
     season_points: 8,
     points: 402,
     podiums: 4,
-    team_id: 9
+    team_id: 9,
+    image: 'gasly.jpg'
   },
   {
     name: 'Esteban Ocon',
@@ -177,7 +194,8 @@ export const drivers = [
     season_points: 5,
     points: 427,
     podiums: 3,
-    team_id: 9
+    team_id: 9,
+    image: 'ocon.jpg'
   },
   {
     name: 'Valtteri Bottas',
@@ -187,7 +205,8 @@ export const drivers = [
     season_points: 0,
     points: 1797,
     podiums: 67,
-    team_id: 10
+    team_id: 10,
+    image: 'bottas.jpg'
   },
   {
     name: 'Zhou Guanyu',
@@ -197,6 +216,7 @@ export const drivers = [
     season_points: 0,
     points: 12,
     podiums: 0,
-    team_id: 10
+    team_id: 10,
+    image: 'zhou.jpg'
   }
 ]
