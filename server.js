@@ -1,6 +1,10 @@
-const http = require('http');
-const fs = require('fs');
-const path = require('path');
+import http from 'http';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { tracks } from './public/data/tracks.js';
+import { drivers } from './public/data/drivers.js';
+import { teams } from './public/data/teams.js';
 
 const PORT = process.env.PORT || 3000;
 
@@ -22,33 +26,53 @@ const getContentType = (filePath) => {
 const server = http.createServer((req, res) => {
   let filePath;
 
+  console.log(req.url);
+
   //Here we are loading different assets and all pages
   if(req.url.includes('/assets') || req.url.includes('/data')) {
     filePath = req.url;
   }
   else {
-    switch(req.url) {
-      case '/index':
-      case '/':
+    switch(true) {
+      case req.url === '/index':
+      case req.url === '/':
         filePath = '/pages/index/index.html';
         break;
-      case '/standings/drivers':
+      case req.url === '/standings/drivers':
         filePath = '/pages/standings/drivers.html';
         break;
-      case '/standings/constructors':
+      case req.url.startsWith('/drivers/'):
+        const driverId = req.url.split('/').pop();
+        (drivers.some(driver => driver.id === Number(driverId)) && !isNaN(driverId))
+          ?  filePath = '/pages/driver/driver.html' : filePath = '/pages/404.html';
+        break;
+      case req.url === '/standings/constructors':
         filePath = '/pages/standings/constructors.html';
         break;
-      case '/schedule':
+      case req.url.startsWith('/constructors/'):
+        const constructorId = req.url.split('/').pop();
+        (teams.some(team => team.id === Number(constructorId)) && !isNaN(constructorId))
+          ?  filePath = '/pages/constructor/constructor.html' : filePath = '/pages/404.html';
+        break;
+      case req.url === '/schedule':
         filePath = '/pages/schedule/schedule.html';
         break;
-      case '/tracks':
+      case req.url === '/tracks':
         filePath = '/pages/tracks/tracks.html';
+        break;
+      case req.url.startsWith('/tracks/'):
+        const trackId = req.url.split('/').pop();
+        (tracks.some(track => track.id === Number(trackId)) && !isNaN(trackId))
+          ?  filePath = '/pages/tracks/track.html' : filePath = '/pages/404.html';
         break;
       default:
         filePath = '/pages/404.html';
     }
   }
 
+  console.log(filePath);
+  const __filename = fileURLToPath(import.meta.url);
+  const __dirname = path.dirname(__filename);
   filePath = path.join(__dirname, 'public', filePath);
 
   fs.readFile(filePath, (err, content) => {

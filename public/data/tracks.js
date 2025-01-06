@@ -239,4 +239,4 @@ export const tracks = [
     laps: 58,
     image: 'yas_marina_circuit.png'
   }
-]
+];

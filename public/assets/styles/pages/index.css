@@ -1,0 +1,60 @@
+.background-container {
+    margin-top: 60px;
+    height: 640px;
+}
+
+.background-img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.timer-container {
+    box-shadow: rgba(0, 0, 0, 0.2) 5px 3px 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    padding: 25px 40px;
+}
+
+.next-race-title {
+    align-items: center;
+    display: flex;
+    height: 100%;
+}
+
+.next-race-title h2 {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.next-race-title h2:first-child {
+    margin-right: 20px;
+}
+
+.next-race-flag {
+    height: 100%;
+    margin-right: 20px;
+}
+
+.next-race-timer {
+    align-items: center;
+    display: flex;
+}
+
+.next-race-timer-part {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-right: 16px;
+}
+
+.next-race-timer-part:last-child {
+    margin-right: 0;
+}
+
+.next-race-timer-part h2 {
+    font-weight: bold;
+    margin-bottom: 0;
+}

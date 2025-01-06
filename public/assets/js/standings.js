@@ -14,8 +14,16 @@ const displayDrivers = () => {
 
     tableRow.innerHTML = `
       <td>${counter}</td>
-      <td>${driver.name}</td>
-      <td>${getTeamName(driver.team_id)}</td>
+      <td>
+        <a href="/drivers/${driver.id}">
+            ${driver.name}
+        </a>
+      </td>
+      <td>
+        <a href="/constructors/${driver.team_id}">
+            ${getTeamName(driver.team_id)}
+        </a>
+      </td>
       <td>${driver.season_points}</td>
     `;
 
@@ -36,7 +44,11 @@ const displayConstructors = () => {
 
     tableRow.innerHTML = `
       <td>${counter}</td>
-      <td>${team.name}</td>
+      <td>
+        <a href="/constructors/${team.id}">
+            ${team.name}
+        </a>
+      </td>
       <td>${team.points}</td>
     `;
 

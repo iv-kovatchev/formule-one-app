@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <title>Formula One application</title>
     <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/assets/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/pages/index.css">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/main.css">
 </head>
 <body>
     <nav class="navbar">
     <div class="navbar__logo">
         <a href="/index">
-            <img src="/assets/images/logo.png" alt="logo" class="navbar__logo"/>
+            <img src="/assets/images/logo.png" alt="logo" class="navbar__logo">
         </a>
     </div>
 
@@ -44,6 +45,41 @@
     </div>
 </nav>
 
-    <h1>This is home page</h1>
+    <div class="background-container">
+        <img class="background-img" src="/assets/images/background.jpg" alt="home-page-background">
+    </div>
+
+    <div class="timer-container">
+        <div class="next-race-title" id="next-race-title">
+            <h2>Next race: </h2>
+        </div>
+        <div class="next-race-timer" id="next-race-timer">
+            <div class="next-race-timer-part">
+                <h2 id="next-race-timer-days">0</h2>
+                <p>Days</p>
+            </div>
+            <div class="next-race-timer-part">
+                <h2 id="next-race-timer-hours">0</h2>
+                <p>Hours</p>
+            </div>
+            <div class="next-race-timer-part">
+                <h2 id="next-race-timer-minutes">0</h2>
+                <p>Minutes</p>
+            </div>
+            <div class="next-race-timer-part">
+                <h2 id="next-race-timer-seconds">0</h2>
+                <p>Seconds</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="last-race-container">
+            <h1>Last race</h1>
+        </section>
+    </div>
+
+
+    <script type="module" src="../../assets/js/index.js"></script>
 </body>
 </html>

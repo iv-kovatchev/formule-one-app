@@ -21,6 +21,11 @@
     padding: 16px;
 }
 
+.table td a {
+    color: var(--black);
+    font-weight: normal;
+}
+
 .table tbody tr:nth-child(even) {
     background-color: var(--gray-100);
 }
