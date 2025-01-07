@@ -58,3 +58,65 @@
     font-weight: bold;
     margin-bottom: 0;
 }
+
+.last-race-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 128px;
+}
+
+.last-race-flag {
+    height: 60px;
+    margin: 0 20px;
+}
+
+.last-race-title h1 {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.last-race-podium {
+    align-items: flex-start;
+    display: flex;
+}
+
+.last-race-driver-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 24px;
+}
+
+.driver-name-container {
+    align-items: center;
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.driver-name-container img {
+    height: 60px;
+}
+
+.driver-name-container h2 {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.last-race-driver-box h1 {
+    font-weight: bold;
+}
+
+.last-race-driver-box:first-child {
+    margin-top: 72px;
+}
+
+.last-race-driver-box:last-child {
+    margin-right: 0;
+    margin-top: 144px;
+}
+
+.last-race-driver-box img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
