@@ -1,51 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Formula One application</title>
-    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/assets/styles/main.css">
-</head>
-<body>
-<nav class="navbar">
-    <div class="navbar__logo">
-        <a href="/index">
-            <img src="/assets/images/logo.png" alt="logo" class="navbar__logo">
-        </a>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formula One application</title>
+        <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="/assets/styles/pages/schedule.css">
+        <link rel="stylesheet" href="/assets/styles/main.css">
+    </head>
+    <body>
+        <nav class="navbar">
+        <div class="navbar__logo">
+            <a href="/index">
+                <img src="/assets/images/logo.png" alt="logo" class="navbar__logo">
+            </a>
+        </div>
 
-    <ul class="navbar__menu">
-        <li class="navbar__menu-link">
-            <a href="/index">Home</a>
-        </li>
-        <li class="navbar__menu-link">
-            <button>Standings</button>
-            <ul class="navbar__submenu">
-                <li class="navbar__submenu-link">
-                    <a href="/standings/drivers">Drivers</a>
-                </li>
-                <li class="navbar__submenu-link">
-                    <a href="/standings/constructors">Constructors</a>
-                </li>
-            </ul>
-        </li>
-        <li class="navbar__menu-link">
-            <a href="/schedule">Schedule</a>
-        </li>
-        <li class="navbar__menu-link">
-            <a href="/tracks">Tracks</a>
-        </li>
-    </ul>
+        <ul class="navbar__menu">
+            <li class="navbar__menu-link">
+                <a href="/index">Home</a>
+            </li>
+            <li class="navbar__menu-link">
+                <button>Standings</button>
+                <ul class="navbar__submenu">
+                    <li class="navbar__submenu-link">
+                        <a href="/standings/drivers">Drivers</a>
+                    </li>
+                    <li class="navbar__submenu-link">
+                        <a href="/standings/constructors">Constructors</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navbar__menu-link">
+                <a href="/schedule">Schedule</a>
+            </li>
+            <li class="navbar__menu-link">
+                <a href="/tracks">Tracks</a>
+            </li>
+        </ul>
 
-    <div class="navbar__hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-</nav>
+        <div class="navbar__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
 
-<div class="container">
-    <h1>This is schedule page</h1>
-</div>
-</body>
+        <div class="container">
+            <div class="schedule-container" id="schedule-container">
+                <select class="years" id="years">
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                </select>
+                <div id="races-list">
+                </div>
+            </div>
+        </div>
+
+        <script type="module" src="../../assets/js/schedule.js"></script>
+    </body>
 </html>

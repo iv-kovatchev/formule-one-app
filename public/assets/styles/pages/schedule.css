@@ -1,0 +1,8 @@
+.schedule-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.years {
+    align-self: flex-end;
+}
