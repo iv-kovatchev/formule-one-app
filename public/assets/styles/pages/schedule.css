@@ -6,3 +6,63 @@
 .years {
     align-self: flex-end;
 }
+
+.races-list {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 24px;
+}
+
+.race-widget {
+    box-shadow: rgba(0, 0, 0, 0.2) 5px 3px 10px;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.race-widget-header {
+    align-items: center;
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.race-widget-header h2 {
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+
+.race-flag {
+    height: 60px;
+}
+
+.race-widget-driver-row {
+    align-items: center;
+    display: flex;
+    margin-top: 12px;
+}
+
+.race-widget-driver-row h3 {
+    margin-bottom: 0;
+    margin-left: 12px;
+}
+
+.race-medal {
+    height: 50px;
+}
+
+.no-result {
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .races-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .races-list {
+        grid-template-columns: 1fr;
+    }
+}

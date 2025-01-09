@@ -1,20 +1,54 @@
 import { races } from '../../data/races.js';
 import { drivers } from '../../data/drivers.js';
 
-document.querySelector('#years').addEventListener('change', (event) => {
-    console.log(event.target.value);
+const selectEl = document.querySelector('#years');
+const racesListEl = document.querySelector('#races-list');
+
+function getAllRacesForCurrentYear() {
+    const selectedYear = Number(selectEl.value);
+    return races.filter(race => {
+        const raceDate = new Date(race.race_time).getFullYear();
+        return raceDate === selectedYear;
+    });
+}
+
+selectEl.addEventListener('change', (event) => {
+    const currentYearRaces = getAllRacesForCurrentYear();
+    displayAllRaceWidgets(currentYearRaces);
 });
 
-function createDriverRow(driver) {
-    console.log(driver);
+function createDriverRow(driver, medal) {
+    const driverRow = document.createElement('div');
+    driverRow.className = 'race-widget-driver-row';
 
-    return 2;
+    const img = document.createElement('img');
+    img.className = 'race-medal';
+    img.src = `/assets/images/medals/${medal}`;
+    img.alt = 'race-medal';
+
+    const name = document.createElement('h3');
+    name.textContent = driver.name;
+
+    driverRow.appendChild(img);
+    driverRow.appendChild(name);
+
+    return driverRow;
+}
+
+const generateDate = (date) => {
+    const day = date.getDate();
+    const month = date.getMonth() + 1;
+    const year = date.getFullYear();
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
+    const seconds = date.getSeconds();
+
+    return `Race date: ${day}/${month}/${year}`;
 }
 
 const buildWidget = (race) => {
-    const races = document.querySelector('#races-list');
-
     const widget = document.createElement('section');
+    widget.className = 'race-widget';
 
     const img = document.createElement('img');
     img.className = 'race-flag';
@@ -24,23 +58,43 @@ const buildWidget = (race) => {
     const raceTitle = document.createElement('h2');
     raceTitle.textContent = race.name;
 
-    const raceRow = document.createElement('div');
-    raceRow.appendChild(img);
-    raceRow.appendChild(raceTitle);
+    const raceHeaderRow = document.createElement('div');
+    raceHeaderRow.className = 'race-widget-header';
+    raceHeaderRow.appendChild(img);
+    raceHeaderRow.appendChild(raceTitle);
+
+    const raceDate = document.createElement('h3');
+    raceDate.textContent = generateDate(race.race_time);
+
+    widget.appendChild(raceHeaderRow);
+    widget.appendChild(raceDate);
 
     const firstDriver = drivers.find((driver) => driver.id === race.first_place_driver_id);
     const secondDriver = drivers.find((driver) => driver.id === race.second_place_driver_id);
     const thirdDriver = drivers.find((driver) => driver.id === race.third_place_driver_id);
 
-    const firstDriverElement = createDriverRow(firstDriver);
-    const secondDriverElement = createDriverRow(secondDriver);
-    const thirdDriverElement = createDriverRow(thirdDriver);
+    if(firstDriver === undefined || secondDriver === undefined || thirdDriver === undefined) {
+        const noResult = document.createElement('h2');
+        noResult.textContent = 'No result';
+        noResult.className = 'no-result';
+        widget.appendChild(noResult);
+    }
+    else {
+        const firstDriverElement = createDriverRow(firstDriver, 'first-place.png');
+        const secondDriverElement = createDriverRow(secondDriver, 'second-place.png');
+        const thirdDriverElement = createDriverRow(thirdDriver, 'third-place.png');
 
-    widget.appendChild(raceRow);
-    races.appendChild(widget);
+        widget.appendChild(firstDriverElement);
+        widget.appendChild(secondDriverElement);
+        widget.appendChild(thirdDriverElement);
+    }
+
+    racesListEl.appendChild(widget);
 }
 
-const displayAllRaceWidgets = () => {
+const displayAllRaceWidgets = (races) => {
+    racesListEl.innerHTML = '';
+
     for(let race of races) {
         buildWidget(race);
     }
@@ -51,5 +105,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     console.log(asd.value);
 
-    displayAllRaceWidgets()
+    const currentYearRaces = getAllRacesForCurrentYear();
+    displayAllRaceWidgets(currentYearRaces);
 });

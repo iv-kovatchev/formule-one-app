@@ -183,7 +183,7 @@ export const races = [
     id: 19,
     name: 'United Stated',
     flag: 'usa.png',
-    race_time: new Date("2024-10-205T00:00:00"),
+    race_time: new Date("2024-10-20T00:00:00"),
     first_place_driver_id: 5,
     second_place_driver_id: 6,
     third_place_driver_id: 1,
