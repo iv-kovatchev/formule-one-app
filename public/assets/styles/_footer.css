@@ -1,0 +1,17 @@
+.footer {
+    box-shadow: rgba(0, 0, 0, 0.2) 10px 3px 20px;
+    left: 0;
+    margin-top: 24px;
+    padding: 12px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.footer--additional {
+    bottom: -62px
+}
+
+.footer p {
+    margin-bottom: 0;
+}

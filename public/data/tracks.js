@@ -7,7 +7,8 @@ export const tracks = [
     race_lap_record: '1:19.813',
     turns: 16,
     laps: 58,
-    image: 'albert_park_circuit.png'
+    image: 'albert_park_circuit.png',
+    flag: 'australia.png'
   },
   {
     id: 2,
@@ -17,7 +18,8 @@ export const tracks = [
     race_lap_record: '1:17.774',
     turns: 17,
     laps: 71,
-    image: 'autódromo_hermanos_rodríguez.png'
+    image: 'autodromo_hermanos_rodriguez.png',
+    flag: 'mexico.png'
   },
   {
     id: 3,
@@ -27,7 +29,8 @@ export const tracks = [
     race_lap_record: '1:15.484',
     turns: 19,
     laps: 63,
-    image: 'imola.png'
+    image: 'imola.png',
+    flag: 'italy.png'
   },
   {
     id: 4,
@@ -37,7 +40,8 @@ export const tracks = [
     race_lap_record: '1:10.540',
     turns: 15,
     laps: 71,
-    image: 'interlagos_circuit.png'
+    image: 'interlagos_circuit.png',
+    flag: 'brazil.png'
   },
   {
     id: 5,
@@ -47,7 +51,8 @@ export const tracks = [
     race_lap_record: '1:21.046',
     turns: 11,
     laps: 53,
-    image: 'monza_circuit.png'
+    image: 'monza_circuit.png',
+    flag: 'italy.png'
   },
   {
     id: 6,
@@ -57,7 +62,8 @@ export const tracks = [
     race_lap_record: '1:31.447',
     turns: 15,
     laps: 57,
-    image: 'bahrain_international_circuit.png'
+    image: 'bahrain_international_circuit.png',
+    flag: 'bahrain.png'
   },
   {
     id: 7,
@@ -67,7 +73,8 @@ export const tracks = [
     race_lap_record: '1:43.009',
     turns: 20,
     laps: 51,
-    image: 'baku_circuit.png'
+    image: 'baku_circuit.png',
+    flag: 'azerbaijan.png'
   },
   {
     id: 8,
@@ -77,7 +84,8 @@ export const tracks = [
     race_lap_record: '1:16.330',
     turns: 14,
     laps: 66,
-    image: 'catalunya_circuit.png'
+    image: 'catalunya_circuit.png',
+    flag: 'spain.png'
   },
   {
     id: 9,
@@ -87,7 +95,8 @@ export const tracks = [
     race_lap_record: '1:12.909',
     turns: 19,
     laps: 78,
-    image: 'monte_carlo_circuit.png'
+    image: 'monte_carlo_circuit.png',
+    flag: 'monaco.png'
   },
   {
     id: 10,
@@ -97,7 +106,8 @@ export const tracks = [
     race_lap_record: '1:44.701',
     turns: 19,
     laps: 44,
-    image: 'spa_circuit.png'
+    image: 'spa_circuit.png',
+    flag: 'belgium.png'
   },
   {
     id: 11,
@@ -107,7 +117,8 @@ export const tracks = [
     race_lap_record: '1:13.078',
     turns: 14,
     laps: 70,
-    image: 'montreal_circuit.png'
+    image: 'montreal_circuit.png',
+    flag: 'canada.png'
   },
   {
     id: 12,
@@ -117,7 +128,8 @@ export const tracks = [
     race_lap_record: '1:36.169',
     turns: 20,
     laps: 56,
-    image: 'austin_circuit.png'
+    image: 'austin_circuit.png',
+    flag: 'usa.png'
   },
   {
     id: 13,
@@ -127,7 +139,8 @@ export const tracks = [
     race_lap_record: '1:11.097',
     turns: 14,
     laps: 72,
-    image: 'zandvoort_circuit.png'
+    image: 'zandvoort_circuit.png',
+    flag: 'netherlands.png'
   },
   {
     id: 14,
@@ -137,7 +150,8 @@ export const tracks = [
     race_lap_record: '1:16.627',
     turns: 14,
     laps: 70,
-    image: 'hungaroring.png'
+    image: 'hungaroring.png',
+    flag: 'hungary.png'
   },
   {
     id: 15,
@@ -147,7 +161,8 @@ export const tracks = [
     race_lap_record: '1:30.734',
     turns: 27,
     laps: 50,
-    image: 'jeddah_circuit.png'
+    image: 'jeddah_circuit.png',
+    flag: 'saudi_arabia.png'
   },
   {
     id: 16,
@@ -157,7 +172,8 @@ export const tracks = [
     race_lap_record: '1:34.876',
     turns: 17,
     laps: 50,
-    image: 'las_vegas_circuit.png'
+    image: 'las_vegas_circuit.png',
+    flag: 'usa.png'
   },
   {
     id: 17,
@@ -167,7 +183,8 @@ export const tracks = [
     race_lap_record: '1:22.384',
     turns: 16,
     laps: 57,
-    image: 'qatar_circuit.png'
+    image: 'qatar_circuit.png',
+    flag: 'qatar.png'
   },
   {
     id: 18,
@@ -177,7 +194,8 @@ export const tracks = [
     race_lap_record: '1:34.486',
     turns: 19,
     laps: 62,
-    image: 'marina_bay_circuit.png'
+    image: 'marina_bay_circuit.png',
+    flag: 'singapore.png'
   },
   {
     id: 19,
@@ -187,7 +205,8 @@ export const tracks = [
     race_lap_record: '1:29.708',
     turns: 19,
     laps: 57,
-    image: 'miami_circuit.png'
+    image: 'miami_circuit.png',
+    flag: 'usa.png'
   },
   {
     id: 20,
@@ -197,7 +216,8 @@ export const tracks = [
     race_lap_record: '1:05.619',
     turns: 10,
     laps: 71,
-    image: 'austria_circuit.png'
+    image: 'austria_circuit.png',
+    flag: 'austria.png'
   },
   {
     id: 21,
@@ -207,7 +227,8 @@ export const tracks = [
     race_lap_record: '1:32.238',
     turns: 16,
     laps: 56,
-    image: 'shanghai_circuit.png'
+    image: 'shanghai_circuit.png',
+    flag: 'china.png'
   },
   {
     id: 22,
@@ -217,7 +238,8 @@ export const tracks = [
     race_lap_record: '1:27.097',
     turns: 18,
     laps: 52,
-    image: 'silverstone_circuit.png'
+    image: 'silverstone_circuit.png',
+    flag: 'united_kingdom.png'
   },
   {
     id: 23,
@@ -227,7 +249,8 @@ export const tracks = [
     race_lap_record: '1:30.983',
     turns: 18,
     laps: 53,
-    image: 'suzuka_circuit.png'
+    image: 'suzuka_circuit.png',
+    flag: 'japan.png'
   },
   {
     id: 24,
@@ -237,6 +260,7 @@ export const tracks = [
     race_lap_record: '1:25.637',
     turns: 16,
     laps: 58,
-    image: 'yas_marina_circuit.png'
+    image: 'yas_marina_circuit.png',
+    flag: 'uae.png'
   }
 ];

@@ -1,0 +1,13 @@
+.location-table-row {
+    align-items: center;
+    display: flex;
+}
+
+.location-table-row img {
+    height: 32px;
+}
+
+.location-table-row p {
+    margin-bottom: 0;
+    margin-left: 12px;
+}

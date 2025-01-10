@@ -1,0 +1,44 @@
+.track-title {
+    align-items: center;
+    display: flex;
+}
+
+.track-title h1 {
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-left: 16px;
+}
+
+.track-title img {
+    height: 60px;
+}
+
+.circuit-information-container {
+    display: flex;
+    margin-top: 24px;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+    }
+}
+
+.circuit-data-content {
+    width: 40%;
+
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
+}
+
+.circuit-image-content {
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.2) 5px 3px 10px;
+    padding: 16px;
+    margin-top: 16px;
+
+    @media (min-width: 1025px) {
+        margin-left: 32px;
+        margin-top: 0;
+        width: calc(60% - 32px);
+    }
+}

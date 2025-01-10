@@ -6,6 +6,7 @@
     <title>Formula One application</title>
     <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/assets/styles/main.css">
+    <link rel="stylesheet" href="/assets/styles/pages/track.css">
 </head>
 <body>
 
@@ -47,7 +48,18 @@
 </nav>
 
 <div class="container">
-    <h1>This is track page</h1>
+    <div id="track-container" class="track-container">
+        <div id="track-title" class="track-title"></div>
+        <div id="circuit-information-container" class="circuit-information-container">
+            <div id="circuit-data-content" class="circuit-data-content"></div>
+            <div id="circuit-image-content" class="circuit-image-content"></div>
+        </div>
+    </div>
 </div>
+
+<footer class="footer">
+    <p>2025 &copy; All rights reserved.</p>
+</footer>
+<script type="module" src="../../assets/js/track.js"></script>
 </body>
 </html>

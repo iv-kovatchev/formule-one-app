@@ -3,5 +3,6 @@
 @import "_reset.css";
 @import "_typography.css";
 
+@import "_footer.css";
 @import "_navbar.css";
 @import "_table.css";
