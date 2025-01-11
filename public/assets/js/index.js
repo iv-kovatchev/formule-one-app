@@ -2,6 +2,8 @@ import { races } from '../../data/races.js';
 import { drivers } from '../../data/drivers.js';
 import { tracks } from '../../data/tracks.js';
 
+const mediaQuery = window.matchMedia("(max-width: 1024px)");
+
 //Helper method for getting next race from races.js
 const getNextRace = () => {
   const now = new Date();
@@ -126,9 +128,16 @@ const createLastRacePodium = (race) => {
   lastRacePodiumTitle.appendChild(img);
   lastRacePodiumTitle.appendChild(nameSecondPart);
 
-  createLastRaceDriverContainer(secondPlaceDriver, lastRacePodiumDiv, 'second-place.png');
-  createLastRaceDriverContainer(firstPlaceDriver, lastRacePodiumDiv, 'first-place.png');
-  createLastRaceDriverContainer(thirdPlaceDriver, lastRacePodiumDiv, 'third-place.png');
+  if(mediaQuery.matches) {
+    createLastRaceDriverContainer(firstPlaceDriver, lastRacePodiumDiv, 'first-place.png');
+    createLastRaceDriverContainer(secondPlaceDriver, lastRacePodiumDiv, 'second-place.png');
+    createLastRaceDriverContainer(thirdPlaceDriver, lastRacePodiumDiv, 'third-place.png');
+  }
+  else {
+    createLastRaceDriverContainer(secondPlaceDriver, lastRacePodiumDiv, 'second-place.png');
+    createLastRaceDriverContainer(firstPlaceDriver, lastRacePodiumDiv, 'first-place.png');
+    createLastRaceDriverContainer(thirdPlaceDriver, lastRacePodiumDiv, 'third-place.png');
+  }
 }
 
 //Displaying all section in the home page

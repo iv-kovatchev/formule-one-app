@@ -14,10 +14,16 @@ html, body {
 
 /* Set a default font size and family for body */
 body {
+    display: flex;
+    flex-direction: column;
     font-size: 100%;
     font-family: sans-serif;
     -webkit-font-smoothing: antialiased; /* Improves font rendering */
     -moz-osx-font-smoothing: grayscale;  /* Improves font rendering on macOS */
+}
+
+main {
+    flex: 1;
 }
 
 /* Remove list styling (bullets and indents) */

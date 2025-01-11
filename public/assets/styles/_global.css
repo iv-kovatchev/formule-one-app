@@ -1,8 +1,8 @@
 .container {
-    margin-right: auto;
     margin-left: auto;
-    padding: 24px 16px;
+    margin-right: auto;
     margin-top: 60px;
+    padding: 24px 16px;
 
     @media (min-width: 576px) {
         max-width: 576px;

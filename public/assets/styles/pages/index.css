@@ -10,17 +10,26 @@
 }
 
 .timer-container {
+    align-items: center;
     box-shadow: rgba(0, 0, 0, 0.2) 5px 3px 10px;
     display: flex;
     justify-content: space-between;
-    height: 100px;
     padding: 25px 40px;
+
+    @media (max-width: 1024px) {
+        align-items: flex-start;
+        flex-direction: column;
+    }
 }
 
 .next-race-title {
     align-items: center;
     display: flex;
     height: 100%;
+
+    @media (max-width: 1024px) {
+        margin-bottom: 24px;
+    }
 }
 
 .next-race-title h2 {
@@ -33,7 +42,7 @@
 }
 
 .next-race-flag {
-    height: 100%;
+    height: 60px;
     margin-right: 20px;
 }
 
@@ -59,10 +68,18 @@
     margin-bottom: 0;
 }
 
+.next-race-timer-part p {
+    margin-bottom: 0;
+}
+
 .last-race-title {
     display: flex;
     align-items: center;
     margin-bottom: 128px;
+
+    @media (max-width: 1024px) {
+        margin-bottom: 64px;
+    }
 }
 
 .last-race-flag {
@@ -78,6 +95,11 @@
 .last-race-podium {
     align-items: flex-start;
     display: flex;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .last-race-driver-box {
@@ -86,6 +108,11 @@
     flex-direction: column;
     flex: 1;
     margin-right: 24px;
+
+    @media (max-width: 1024px) {
+        margin-bottom: 48px;
+        margin-top: 0;
+    }
 }
 
 .driver-name-container {
@@ -109,11 +136,20 @@
 
 .last-race-driver-box:first-child {
     margin-top: 72px;
+
+    @media (max-width: 1024px) {
+        margin-top: 0;
+        margin-bottom: 48px;
+    }
 }
 
 .last-race-driver-box:last-child {
     margin-right: 0;
     margin-top: 144px;
+
+    @media (max-width: 1024px) {
+        margin-top: 0;
+    }
 }
 
 .last-race-driver-box img {
