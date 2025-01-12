@@ -16,6 +16,11 @@
         </a>
     </div>
 
+    <input id="menu-toggler" type="checkbox" class="menu-toggler">
+    <label for="menu-toggler" class="navbar__hamburger">
+        <span></span>
+    </label>
+
     <ul class="navbar__menu">
         <li class="navbar__menu-link">
             <a href="/index">Home</a>
@@ -39,11 +44,29 @@
         </li>
     </ul>
 
-    <div class="navbar__hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+    <ul class="navbar__menu-mobile">
+        <li class="navbar__menu-link-mobile">
+            <a href="/index">Home</a>
+        </li>
+        <li class="navbar__submenu-link-mobile">
+            <input type="checkbox" id="submenu__toggle" class="submenu__toggle">
+            <label for="submenu__toggle" class="submenu__label">Standings</label>
+            <ul class="submenu__list">
+                <li class="navbar__menu-link-mobile">
+                    <a href="/standings/drivers">Drivers</a>
+                </li>
+                <li class="navbar__menu-link-mobile">
+                    <a href="/standings/constructors">Constructors</a>
+                </li>
+            </ul>
+        </li>
+        <li class="navbar__menu-link-mobile">
+            <a href="/schedule">Schedule</a>
+        </li>
+        <li class="navbar__menu-link-mobile">
+            <a href="/tracks">Tracks</a>
+        </li>
+    </ul>
 </nav>
 
 <main>
